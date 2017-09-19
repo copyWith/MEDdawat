@@ -1,0 +1,163 @@
+@import "reset.css";
+
+body,html {
+    background: #212121 none no-repeat fixed left top;
+    color: #333;
+}
+.map {
+    height: 500px;
+    min-height: 156px;
+    position: relative;
+}
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+.map_shade {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+.map_pd {
+    padding: 5px;
+    background-color: #f7f7f7;
+    overflow: hidden;
+    height: 490px;
+}
+.from {
+    width:1004px;
+    padding:20px 40px;
+    padding-bottom: 5px;
+    margin: -100px auto;
+    margin-bottom: 0;
+    z-index: 5;
+    position: relative;
+    overflow: hidden;
+    height: 493px;
+}
+.relation,.from_main {
+    padding: 50px 70px;
+    background: #fff;
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+}
+.relation_box,.from_box {
+    width: 302px;
+    padding: 0 40px;
+    line-height: 24px;
+    min-height: 393px;
+    max-height: 393px;
+    animation-delay: 0.1s;
+}
+.relation_box {
+    animation: opa 1s ease;
+}
+.from_main {
+    animation: opb 1s ease;
+}
+@keyframes opa {
+    0%{
+    opacity: 0;
+        transform: translateX(-100px)
+}
+    100%{
+    opacity: 1;
+        transform: translateX(0)
+}
+}
+@keyframes opb {
+    0%{
+    opacity: 0;
+        transform: translateY(300px)
+}
+    100%{
+    opacity: 1;
+        transform: translateY(0)
+}
+}
+.relation_box h2 {
+    font-size: 24px;
+}
+.relation_box span {
+    font-size: 16px;
+}
+.relation_box p {
+    font-size: 15px;
+    font-weight: 900;
+}
+.relation_box strong {
+    font-size: 20px;
+}
+.from_main {
+    background-color: #333;
+    right: 0;
+    top: 20px;
+    color: #fff;
+}
+
+.from_box span {
+    font-size: 14px;
+}
+.from_box form  {
+    padding-top: 20px;
+}
+.from_box form div {
+    padding-bottom: 10px;
+}
+.from_box form label {
+    width: 80px;
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgb(184, 184, 184);
+    margin-top: 10px;
+}
+.from_box form input,textarea {
+    border: 0;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    background-color: transparent;
+    color: rgb(102, 102, 102);
+    height: 24px;
+    font-size: 14px;
+    outline: none;
+    width: 212px;
+    max-width: 212px;
+}
+.from_box form textarea  {
+    height: 62px;
+    min-height: 62px;
+}
+.from_box form button {
+    line-height: 14px;
+    font-size: 14px;
+    padding: 6px 20px;
+    border: 0;
+}
+.footer {
+    border-top: 1px solid #2a2a2a;
+    padding: 10px 0;
+    text-align: center;
+    color: rgb(170, 170, 170);
+    min-height: 30px;
+}
+
+.coat > .k_header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border-bottom: 0;
+}
+.k_header_right li a .select{
+    width: 82px;
+    background-color: white;
+}

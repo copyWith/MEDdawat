@@ -1,0 +1,425 @@
+@import "reset.css";
+
+@font-face {
+    font-family: 'revicons';
+    src: url("../fonts/revicons.woff");
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body, .coat {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 0
+}
+
+.coat .to_top {
+    position: fixed;
+    right: 15px;
+    bottom: 25px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    z-index: 99;
+    opacity: 0;
+    transition: 0.35s;
+}
+
+.coat .to_top img {
+    width: 100%;
+    display: block;
+}
+
+.coat > div {
+    width: 100%;
+    height: 100vh;
+    background-color: #212121;
+}
+
+.coat > .k_header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) text-decoration : none;
+}
+
+.coat > .k_header .k_header_right a:hover {
+    text-decoration: none;
+}
+
+.k_header_right li a .select {
+    width: 82px;
+    background-color: white;
+}
+
+.r_dot {
+    position: fixed;
+    right: 15px;
+    z-index: 66;
+    top: 50%;
+    overflow: hidden;
+    margin-top: -116px;
+}
+
+.r_dot li {
+    cursor: pointer;
+    width: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.r_dot li:nth-child(7) a {
+    margin-bottom: 0;
+}
+
+.r_dot li a {
+    width: 3px;
+    height: 3px;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    transition: 0.35s;
+}
+
+.r_dot li:nth-child(1) a {
+    width: 12px;
+    height: 12px;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner_main {
+    width: 400%;
+    height: 100vh;
+}
+
+.banner_main li {
+    width: 100vw;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner_main li p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    width: 450px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -225px;
+    line-height: 25px;
+}
+
+.banner_main li p span {
+    font-size: 18px;
+}
+
+.banner_main li:nth-child(1) p {
+    opacity: 1;
+}
+
+.banner_main li p {
+    opacity: 0;
+    transition: 0.9s;
+}
+
+.banner_main li video {
+    width: 100%;
+    display: block;
+}
+
+.banner_main li:nth-child(1), .banner_main li:nth-child(4) {
+    background: url("../images/banner_1.jpg") no-repeat;
+    background-size: cover;
+}
+
+.banner_main li:nth-child(2) {
+    background: url("../images/banner_2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.banner_main li video {
+    position: absolute;
+    left: 0;
+    top: -53.1875px;
+}
+
+.banner_main li .dis {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/gridtile.png");
+    z-index: 5;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    transition: all ease-out .3s;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-family: revicons;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.le {
+    left: 20px;
+}
+
+.le::before {
+    font-size: 50px;
+    content: "\e824";
+}
+
+.ri {
+    right: 20px;
+    content: "\e825";
+}
+
+.ri::before {
+    font-size: 50px;
+    content: "\e825";
+}
+
+.btn:hover {
+    background-color: rgba(53, 53, 53, 0.6);
+}
+
+.dotli {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 60px;
+    margin-left: -30px;
+    z-index: 9;
+}
+
+.dotli li {
+    z-index: 77;
+    width: 7px;
+    height: 7px;
+    float: left;
+    transition: all ease-out .3s;
+    border-radius: 50%;
+    background-color: #8d9095;
+    margin: 0 6px;
+    cursor: pointer;
+    box-shadow: 0 0 8px #000;
+}
+
+.dotli li:nth-child(1) {
+    background-color: #fff;
+}
+
+.dotli li:hover {
+    background-color: #fff;
+}
+
+.container {
+    width: 1286px;
+    margin: 0 auto;
+}
+
+.coat .c {
+    background: url("../images/c_bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.c_shaow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.c_shaow .row, .c_shaow .row > div {
+    height: 100vh;
+    transition: 0.35s;
+    color: #fff;
+}
+
+.c_shaow .row > div:nth-child(2) {
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.c_shaow .row > div:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.c_shaow .row > div:hover .show_main {
+    transform: translateY(20px);
+}
+
+.c_shaow .row div .show_main {
+    padding: 0 20px;
+    text-align: center;
+    margin-top: 125px;
+    transition: 0.35s;
+}
+
+.c_shaow .row div .c_show_box {
+    margin: 20px 0;
+}
+
+.c_shaow .row div .c_show_box p {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.c_shaow .row div .c_show_box span {
+    display: inline-block;
+    width: 100px;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.c_shaow .row div .show_main > span {
+    font-size: 14px;
+    color: #A9A9A9;
+    padding: 5px 0;
+}
+
+.c_shaow .row div .show_main .c_show_btn {
+    width: 4em;
+    height: 4em;
+    text-align: center;
+    line-height: 4em;
+    font-family: revicons;
+    margin: auto;
+    border: 2px solid transparent;
+}
+
+.c_shaow .row div .show_main .c_show_btn span::before {
+    font-size: 2.15em;
+    content: "\e825";
+}
+
+.d .row {
+    width: 100%;
+    margin: 0;
+}
+
+.d .row > div {
+    height: 100vh;
+}
+
+.d .row > div:nth-child(1) {
+    background: url("../images/d_bg.jpg") no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.d .row > div:nth-child(1) div {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1) url("../images/gridtile.png");
+}
+
+.d .row > div:nth-child(2) div {
+    margin-top: 52px;
+    /*width: 150px;*/
+    padding: 0 100px;
+}
+
+.d .row > div:nth-child(2) div h2 {
+    font-size: 26px;
+    padding: 0 0 5px 0;
+    margin: 0;
+    margin-bottom: -15px;
+}
+
+.d .row > div:nth-child(2) div span {
+    display: inline-block;
+    font-size: 14px;
+    color: #b6b6b6;
+    border-bottom: 0;
+    line-height: 32px;
+}
+
+p {
+    font-size: 16px;
+    color: #b6b6b6;
+}
+
+.d .row > div:nth-child(2) div .d_bor {
+    border-bottom: 1px solid #9b9b9b;
+    width: 100px;
+}
+
+.d .row > div:nth-child(2) div button {
+    font-size: 14px;
+    padding: 11px 67px;
+    border: 1px solid rgb(51, 51, 51);
+    background-color: rgb(51, 51, 51);
+    transition: 0.3s;
+    color: #fff;
+}
+
+.d .row > div:nth-child(2) div button i::before {
+    font-family: revicons;
+    content: "\e825";
+    font-size: 12px;
+    margin-right: 7px;
+}
+
+.d .row > div:nth-child(2) div button:hover {
+    background-color: rgba(51, 51, 51, 0);
+}
+
+.map_shade {
+    height: 98%;
+}
+
+.g .from {
+    margin: -400px auto;
+}
+
+.g p, .g h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.g button {
+    color: #333;
+}
+
+.from_box, .relation_box {
+    padding: 0 20px;
+    width: 342px;
+}
